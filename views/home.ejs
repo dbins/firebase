@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript">
+		function confirmarClique() {
+			if(confirm("Você deseja excluir este registro?")) {
+				return true;
+			} else {
+				return false;
+			}
+		};
+	</script>
+</head>
+<body>
+	<div class="container">
+	<h2>Home</h2>
+	<p><a class="btn btn-success" href="/cadastro">Cadastrar novo registro</a></p>
+	<table border="1" class="table table-stripped">
+		<thead style="background-color:#000000;color:#FFFFFF">
+			<tr>
+			<th>Nome</th>
+			<th>E-mail</th>
+			<th>Excluir</th>
+			<th>Atualizar</th>
+			</tr>
+		</thead>
+		<Tbody>
+			<%resultados.map(item => { %>
+			<tr>
+				<td><%= item.nome %></td>
+				<td><%= item.email %></td>
+				<td><a onClick="return confirmarClique();"  class="btn btn-danger" href="/apagar/<%= item.id %>">Excluir</a></a></td>
+				<td><a class="btn btn-warning" href="/atualizar/<%= item.id %>">Atualizar</a></a></td>
+			</tr>
+			<% }); %>
+		</Tbody>
+	</table>
+	</div>
+</body>
+</html>	
