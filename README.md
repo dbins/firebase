@@ -14,6 +14,10 @@ Este é um exemplo de integração do Firebase utilizando NodeJS. Neste exemplo 
 
 Para acessar abra no seu navegador o endereço **http://localhost:3000**
 
+## CONFIGURAÇÃO
+
+Edite os arquivos /server.js e cert/cet.json e adicione as configurações do projeto que foi criado no Firebase
+
 ## CLOUD FUNCTIONS
 
 Dentro da pasta /functions existe um segundo projeto, que é para criar as Cloud Functions. As Cloud Functions permitem criar gatilhos que são executados quando ocorre alguma alteração de dados no firestore.

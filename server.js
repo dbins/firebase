@@ -10,13 +10,13 @@ const port = process.env.PORT || 3000
 var firebase = require('firebase');
 
 var firebaseConfig = {
-    apiKey: "AIzaSyAhY9fzxHr33Tkby1lhIoYLYZvySHjCaZE",
-    authDomain: "bins-nodejs-crud.firebaseapp.com",
-    databaseURL: "https://bins-nodejs-crud.firebaseio.com",
-    projectId: "bins-nodejs-crud",
-    storageBucket: "bins-nodejs-crud.appspot.com",
-    messagingSenderId: "125259093807",
-    appId: "1:125259093807:web:fbdb9e93c41cc8084b73da"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
   };
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
